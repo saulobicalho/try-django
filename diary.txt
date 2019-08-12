@@ -3,3 +3,9 @@ first step is to install django, what requires a pipenv command, but it isn't st
 pipenv works as a join of pip and virtualenv and aims to manage packages and dependencies, just as npm for node.js
 pipenv istalled locally. More info @ https://medium.com/grupy-rn/gerenciando-suas-depend%C3%AAncias-e-ambientes-python-com-pipenv-9e5413513fa6
 the command pipenv --python install django==2.2 isnt working, retries the former command omittng "--python" and it worked
+
+27:00 urls are mapped into views, and urls.py manage their respective paths
+so @ urls.py the paths refers to writing the adress to be acessed by browser, composing the desired urls.
+At the same time @urls paths are defined, each of them indicate a name, wich is the view name, according to those described @views.py.
+Those names @ views.py described in more details what html components will be present at the new pages, which are acessed by the respective urls.
+continue at 27:27
