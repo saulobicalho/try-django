@@ -1,0 +1,5 @@
+This repo tries to introduce django for web apps and follows from https://www.youtube.com/watch?v=-oQvMHpKkms
+first step is to install django, what requires a pipenv command, but it isn't still installed
+pipenv works as a join of pip and virtualenv and aims to manage packages and dependencies, just as npm for node.js
+pipenv istalled locally. More info @ https://medium.com/grupy-rn/gerenciando-suas-depend%C3%AAncias-e-ambientes-python-com-pipenv-9e5413513fa6
+the command pipenv --python install django==2.2 isnt working, retries the former command omittng "--python" and it worked
