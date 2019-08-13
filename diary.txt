@@ -9,3 +9,11 @@ so @ urls.py the paths refers to writing the adress to be acessed by browser, co
 At the same time @urls paths are defined, each of them indicate a name, wich is the view name, according to those described @views.py.
 Those names @ views.py described in more details what html components will be present at the new pages, which are acessed by the respective urls.
 continue at 27:27
+--------------------------------------------
+OBS: after a first exit from shell, when trying a new acess to it, the way I found to do it was repeating the former step, as done before, to get its acess:
+pipenv shell, then
+cd src, then
+python manage.py runserver
+--------------------------------------------
+37:00 - important topic about how a template is set @django. Note that is avoided to simple use a path specification as \abc\def...
+once it isnt os-safe (windows uses different bar orientation). So using BAR_DIR as is shown on video makes it safe
