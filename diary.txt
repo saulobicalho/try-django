@@ -17,3 +17,9 @@ python manage.py runserver
 --------------------------------------------
 37:00 - important topic about how a template is set @django. Note that is avoided to simple use a path specification as \abc\def...
 once it isnt os-safe (windows uses different bar orientation). So using BAR_DIR as is shown on video makes it safe
+
+43:00 - now uses context variable (my_title) to set page titles. Note that render function allows to do it, in other words, to rendering context
+48:00 - now uses some kind of hierarchy to extend a base set of properties to a common group of objects(pages). Ancestor page is called by convention base.html
+{{}} and {% %} are tokens from django templates. {{}} works as a placeholder, and contains the variables that will be placed at the template
+Both notation are specific for django engine, they doesnt work at python
+{% %}are delimiters for commands which return will be placed at this point. for more info: https://docs.djangoproject.com/en/1.9/ref/templates/language/
