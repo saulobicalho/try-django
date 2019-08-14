@@ -23,3 +23,25 @@ once it isnt os-safe (windows uses different bar orientation). So using BAR_DIR 
 {{}} and {% %} are tokens from django templates. {{}} works as a placeholder, and contains the variables that will be placed at the template
 Both notation are specific for django engine, they doesnt work at python
 {% %}are delimiters for commands which return will be placed at this point. for more info: https://docs.djangoproject.com/en/1.9/ref/templates/language/
+
+58:00 context_processors
+------------------------------------------------
+1:03 At 17 session, is used the blog app made by authors, as example. Specially, is used the model concept. But isnt quite clear how to dare with basics of db.
+Is there being used an external service as db (such as MySQL?) --> R: by standard, django uses SQLite db. More on: https://pythonacademy.com.br/blog/desenvolvimento-web-com-python-e-django-model
+
+https://docs.djangoproject.com/pt-br/2.2/howto/legacy-databases/ this source describes some notion about db integration on django. Initially, it talks about
+inspectdb command at django shell, but it isnt clear what exactly it does.
+This doc understands that django user has already a db connection running, in a way that its just about passing parameters to django, about the connection.
+The doc says initial settings to db must be done by manipulating DATABASE definitions, but it isnt clear where exactly it is, on code.
+How can someone understand model concept on django? Why it is used to db, and how inspectdb tool helps to its use?
+migrate command seens to be a more complex command to be done, but at this moment there isnt a db connection that can be used as example.
+https://docs.djangoproject.com/pt-br/2.2/faq/models/ according to this info, django is more specific to relational db integration
+
+https://pythonacademy.com.br/blog/desenvolvimento-web-com-python-e-django-introducao according to this, website itself is found at template layer (as can be seen
+at templates folder on this project, with its html files related to pages itself). Still, requests are made to view layer, to url.py.
+url.py sends request to views.py, which communicates w/ html, css, js and form files.
+db is located at model view, and communicates w/ view.py by models.py
+
+https://pythonacademy.com.br/blog/desenvolvimento-web-com-python-e-django-model a model can be undestand as a db table, shows data attributes and behaviors
+django uses inheritance to models, and uses an API to communicate w/ data
+python manage.py makemigrations is the way to propagate alteration of data to django
